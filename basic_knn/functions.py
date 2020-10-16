@@ -1,5 +1,5 @@
 import numpy as np
-from classes import Input, Data, Output
+from .classes import Input, Data, Output
 
 # euclidean distance
 def euc_dist(x, y, a, b):

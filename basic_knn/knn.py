@@ -1,5 +1,5 @@
-from classes import Input
-from functions import create_data, create_output
+from .classes import Input
+from .functions import create_data, create_output
 
 class KNNClassifier(object):
 
