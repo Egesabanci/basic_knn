@@ -35,5 +35,5 @@ model = KNNClassifier(xs = xs, ys = ys, labels = labels)
 sample_input = (..., ...)
 
 # make prediction
-model.predict(sample_input)
+prediction = model.predict(sample_input)
 ```
