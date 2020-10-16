@@ -18,7 +18,7 @@ pip install basic_knn
 #### Create Model
 ```
 # import knn classifier
-from basic_knn import KNNClassifier
+from basic_knn.knn import KNNClassifier
 
 # sample data
 data_x = [...]
