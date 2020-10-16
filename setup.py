@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="basic_knn",
-    version="0.0.1",
+    version="0.0.2",
     author="Ege Sabancı",
     author_email="egesabanci@outlook.com.tr",
     description="K-Nearest Neighbors algorithm for classification problems.",
