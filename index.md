@@ -1,37 +1,40 @@
-## Welcome to GitHub Pages
+# KNN Algorithm Module
 
-You can use the [editor on GitHub](https://github.com/Egesabanci/basic_knn/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### What is KNN?
+In k-NN classification, the output is a class membership. An object is classified by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors (k is a positive integer, typically small). If k = 1, then the object is simply assigned to the class of that single nearest neighbor.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+k-NN is a type of instance-based learning, or lazy learning, where the function is only approximated locally and all computation is deferred until function evaluation. Since this algorithm relies on distance for classification, normalizing the training data can improve its accuracy dramatically. 
 
-### Markdown
+(Wikipedia Article about KNN, https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### How to Install?
+It is always better to use "pip" (Package manager for Python).
+```
+pip install basic_knn
+```
+PYPI project link: https://pypi.org/project/basic-knn/
 
-```markdown
-Syntax highlighted code block
+### Sample Usage
 
-# Header 1
-## Header 2
-### Header 3
+#### Create Model
+```
+# import knn classifier
+from basic_knn.knn import KNNClassifier
 
-- Bulleted
-- List
+# sample data
+data_x = [...]
+data_y = [...]
+labels = [...]
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# create model
+model = KNNClassifier(xs = xs, ys = ys, labels = labels)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### Make Predictions
+```
+# sample input for predictions
+sample_input = (..., ...)
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Egesabanci/basic_knn/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# make prediction
+prediction = model.predict(sample_input)
+```
