@@ -17,7 +17,7 @@ PYPI project link: https://pypi.org/project/basic-knn/
 ### Sample Usage
 
 #### Create Model
-```
+```python
 # import knn classifier
 from basic_knn.knn import KNNClassifier
 
@@ -31,7 +31,7 @@ model = KNNClassifier(xs = xs, ys = ys, labels = labels)
 ```
 
 #### Make Predictions
-```
+```python
 # sample input for predictions
 sample_input = (..., ...)
 
