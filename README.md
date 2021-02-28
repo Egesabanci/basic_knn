@@ -12,7 +12,9 @@ It is always better to use "pip" (Package manager for Python).
 ```
 pip install basic_knn
 ```
+```
 PYPI project link: https://pypi.org/project/basic-knn/
+```
 
 ### Sample Usage
 
